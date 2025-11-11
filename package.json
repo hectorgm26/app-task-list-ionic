@@ -9,7 +9,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "generate-icons-android": "npx capacitor-assets generate --android",
+    "generate-icons-ios": "npx capacitor-assets generate --ios",
+    "generate-icons-pwa": "npx capacitor-assets generate --pwa"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +28,7 @@
     "@capacitor/core": "7.4.4",
     "@capacitor/haptics": "7.0.2",
     "@capacitor/keyboard": "7.0.3",
+    "@capacitor/preferences": "^7.0.2",
     "@capacitor/status-bar": "7.0.3",
     "@ionic/angular": "^8.0.0",
     "ionicons": "^7.0.0",
@@ -42,6 +46,7 @@
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
     "@angular/language-service": "^20.0.0",
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "7.4.4",
     "@ionic/angular-toolkit": "^12.0.0",
     "@types/jasmine": "~5.1.0",
